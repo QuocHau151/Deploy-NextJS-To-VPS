@@ -179,7 +179,11 @@ sudo docker run hello-world
 ```bash
 docker login ghcr.io -u {USERNAME} -p {PASS_IS_ACCESS_TOKEN}
 ```
+- Docker pull
 
+  ``` bash
+  docker pull ghcr.io/quochau151/fptsmarthome:latest
+  ```
 - Chạy Docker trên VPS
 
 ```bash
