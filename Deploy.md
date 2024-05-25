@@ -187,7 +187,7 @@ docker login ghcr.io -u {USERNAME} -p {PASS_IS_ACCESS_TOKEN}
 - Chạy Docker trên VPS
 
 ```bash
-docker run -p 3000:3000 ghcr.io/{USERNAME}/{NAME_PROJECT}:latest
+docker run -d -p 3000:3000 ghcr.io/{USERNAME}/{NAME_PROJECT}:latest
 ```
 
 - Kiểm tra container id, volume image, status
