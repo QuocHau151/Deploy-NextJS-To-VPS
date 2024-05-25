@@ -39,7 +39,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             docker login ghcr.io -u ${{ secrets.USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-            docker pull duthanhduoc/twitter:v4
+            docker pull ghcr.io/{USERNAME}/{name_project}:latest
             docker stop {name_deploy}
             docker rm {name_deploy}
             docker run -p 3000:3000  --name {name_deploy} --restart unless-stopped ghcr.io/{USERNAME}/{NAME_PROJECT}:latest
