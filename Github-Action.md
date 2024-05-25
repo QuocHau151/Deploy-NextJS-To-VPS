@@ -42,7 +42,7 @@ jobs:
             docker pull ghcr.io/{USERNAME}/{name_project}:latest
             docker stop {name_deploy}
             docker rm {name_deploy}
-            docker run -p 3000:3000  --name {name_deploy} --restart unless-stopped ghcr.io/{USERNAME}/{NAME_PROJECT}:latest
+            docker run -d -p 3000:3000  --name {name_deploy} --restart unless-stopped ghcr.io/{USERNAME}/{NAME_PROJECT}:latest
 
 ```
 
