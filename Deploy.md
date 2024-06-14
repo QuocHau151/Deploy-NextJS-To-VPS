@@ -205,7 +205,7 @@ docker ps
 ## 8. Cài Đặt NginX và PM2 cho VPS
 ```bash
 npm install pm2 -g
-pm2 docker run -d -p 3000:3000 ghcr.io/{USERNAME}/{NAME_PROJECT}:la
+pm2 docker run -d -p 3000:3000 ghcr.io/{USERNAME}/{NAME_PROJECT}:latest
 ```
 
 ## 9. Trỏ Domain về Vps
